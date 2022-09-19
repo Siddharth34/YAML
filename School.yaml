@@ -1,0 +1,7 @@
+School :
+ - name : "SVM"
+   principle : "Dont know"
+   students :
+  - name : "sid"
+    rool_no : 54
+    marks : 55

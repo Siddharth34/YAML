@@ -1,0 +1,25 @@
+{
+    "School": [
+        {
+            "name" : "SMS",
+            "principle" : "Dont know",
+
+            "Students" : [
+                {
+                    "rno" : 12,
+                    "name" : "sid",
+                    "marks" : 54
+                },
+                {
+                    "rno" : 18,
+                    "name" : "tejas",
+                    "marks" : 65
+                }
+            ]
+        }
+        
+      
+            
+       
+    ]
+}

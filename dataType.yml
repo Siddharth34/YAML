@@ -1,0 +1,65 @@
+
+# String Variables
+
+name : "Siddharth"
+job : 'TCS'
+Salary :  Thirteen thousand
+
+
+bio : |
+Siddharth Chavan from Sangola.
+Currently, I'm pursuing BSC (ECS). 
+
+
+# write a single line in multiple line 
+# This will be all in single line
+
+bio : > 
+Siddharth Chavan from Sangola.
+Currently, I'm pursuing BSC (ECS). 
+
+
+# Integer 
+
+age : 21
+floatNumber : 36.0
+
+
+Booleanvlaue : Yes # etc
+Booleanvlaue : No # etc
+
+
+# Specify the Type , force to tell datatype to the yaml file 
+
+zero : !!int 0
+positiveNumber : !!int 360
+BinaryNumber : !!int 0b011
+octalNumber : !!int 06541
+
+
+# Floating points number
+
+marks: !!float 22.5
+infinite : .inf
+not a number : .nan
+
+# Boolean 
+
+Booleanvlaue : !!bool Yes # etc
+Booleanvlaue : !!bool No # etc
+
+
+# string 
+
+name : !!str "Siddharth"
+
+#Null
+
+middleName : !!null Null
+~: this is a null key
+
+
+
+
+
+

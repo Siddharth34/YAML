@@ -1,0 +1,119 @@
+Students: !!seq
+- name
+- age
+- marks
+- rool_no
+
+# like this also
+
+students : [name,age,marks,rool_no]
+
+# some of the key of seq is empty 
+#is called sparse seq
+
+sparse sqe : !!sqe
+- name
+- age
+- 
+- Null
+- rool_no
+
+# nested sequances
+
+-
+ -male
+ -female
+ -other
+-
+ -sid
+ -shrdha
+ -Tejas
+
+#key : value pairs are called maps 
+
+!!map
+
+# nested mapping : map within an map
+
+name : "Siddharth"
+roel :
+  age : 21;
+  job : "TCS"
+
+# Same as this
+
+name : "Siddharth"
+roel : {age : 21 , job : "TCS"}
+
+
+# pairs - key may have duplicate value
+
+!!pairs
+
+pairsExample : !!pairs
+- name : "Siddharth"
+- name : "sid"
+
+# this wll be an array of hash tables
+
+# Same as this
+
+pairsExample : !!pairs [name : "Siddharth" , name : "sid"]
+
+
+# set of unique value 
+
+name : !!set
+ ? sid
+ ? tejas 
+ ? adarsh
+
+#dictionary !!omap
+
+people : !!omap
+ - Sid :
+    Name : "Siddharth Chavan"
+    age : 21
+    JOB : "TCS"
+ - Tejay :
+    Name : "Tejas Pise"
+    age : 21
+    JOB : "Wipro"
+
+# reusing some properties
+
+Liking : 
+  FavFood : "Chiken tandori"
+  FavIcecream : "Chocolate"
+
+Person1 : 
+  name: "sid"
+  FavFood : "Chiken tandori"
+  FavIcecream : "Chocolate"
+
+Person2 : 
+  name: "Tejas"
+  FavFood : "Chiken tandori"
+  FavIcecream : "Chocolate"
+
+# Dont repetive tasks so use anchors
+
+Liking : &favs
+  FavFood : "Chiken tandori"
+  FavIcecream : "Chocolate"
+
+Person1 : 
+  name: "sid"
+  <<: *favs
+
+Person2 : 
+  name: "Tejas"
+  <<: *favs
+  FavIcecream : "butterscotch"
+
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+# It is not a programming language it is data format used to exchange data
+# It is similar to XML and JSON
+# YAML is case sensitive language
+#  "Key" : "Value"
+# --- Use for the separate the documents
+# indentation is very important in yaml
+
+
+"name" : "Siddharth chavan"
+1 : "Roll no of Siddharth"
+
+#  "Key" : "Value"
+
+---
+
+# Making lists 
+
+- Apple
+- apple
+- samsung
+- Motorola
+- Nothing
+- Nokia
+
+---
+
+
+# Block Style
+
+cities:
+ - Pune
+ - Thane
+ - Sangola
+
+---
+
+# Also use 
+
+cities: [Pune , Thane , Sangola]
+
+{"name": "Sid" , "age": 21}
+
+
+ ... 
+
+ #   ... Means document is ended
+
